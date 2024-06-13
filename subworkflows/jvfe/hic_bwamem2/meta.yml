@@ -8,7 +8,7 @@ keywords:
 components:
   - bwamem2/index
   - samtools/merge
-  - cram_filter_align
+  - cram/filteralign
 input:
   - reference_tuple:
       description: |
