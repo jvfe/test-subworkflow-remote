@@ -1,4 +1,4 @@
-process CRAM_FILTER_ALIGN {
+process CRAM_FILTERALIGN {
     tag "$meta.id"
     label "process_high"
 
