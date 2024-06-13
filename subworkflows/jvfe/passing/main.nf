@@ -10,7 +10,6 @@
 //
 include { CRAM_FILTERALIGN } from '../../../modules/jvfe/cram/filteralign/main'
 include { BWAMEM2_INDEX     } from '../../../modules/jvfe/bwamem2/index/main'
-include { SAMTOOLS_MERGE    } from '../../../modules/jvfe/samtools/merge/main'
 
 workflow HIC_BWAMEM2 {
     take:
