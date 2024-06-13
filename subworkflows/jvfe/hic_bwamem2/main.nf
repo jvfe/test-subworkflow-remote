@@ -8,7 +8,7 @@
 //
 // MODULE IMPORT BLOCK
 //
-include { CRAM_FILTER_ALIGN } from '../../../modules/jvfe/cram_filter_align/main'
+include { CRAM_FILTER_ALIGN } from '../../../modules/jvfe/cram/filteralign/main'
 include { BWAMEM2_INDEX     } from '../../../modules/nf-core/bwamem2/index/main'
 include { SAMTOOLS_MERGE    } from '../../../modules/nf-core/samtools/merge/main'
 
