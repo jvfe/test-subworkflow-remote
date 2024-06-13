@@ -1,0 +1,57 @@
+name: cram_filter_align
+description: |
+  Provides placeholder
+keywords:
+  - genome
+  - statistics
+tools:
+  - agat:
+      description: "Placeholder placeholder"
+      homepage: "https://github.com/placeholder"
+      documentation: "placeholder"
+      tool_dev_url: "placeholder"
+      doi: "placeholder"
+      licence: ["MIT"]
+input:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test', single_end:false ]
+  - cramfile:
+      type: file
+      description: Placeholder
+      pattern: "*.{placeholder}"
+  - cramindex:
+      type: file
+      description: Placeholder
+      pattern: "*.{placeholder}"
+  - from:
+      type: value
+      description: Placeholder
+  - to:
+      type: value
+      description: Placeholder
+  - base:
+      type: value
+      description: Placeholder
+  - chunkid:
+      type: value
+      description: Placeholder
+  - rglines:
+      type: value
+      description: Placeholder
+  - bwaprefix:
+      type: value
+      description: Placeholder
+output:
+  - mappedbam:
+      type: tuple
+      description: Mapped bams
+      pattern: "*.{txt}"
+  - versions:
+      type: file
+      description: File containing software versions
+      pattern: "versions.yml"
+authors:
+  - "@sanger-tol"
