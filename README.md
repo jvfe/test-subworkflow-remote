@@ -26,13 +26,14 @@ nf-core create --name test --plain --description test --author test
 3. Inside your newly-created pipeline, you can download the `passing` subworkflow from this repository, which only contain local modules, and therefore works:
 
 ```bash
+cd nf-core-test
 nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install passing
 ```
 
 4. Alternatively, attempt to download the `HIC_BWAMEM2` subworkflow, using this repository as your remote.
 
 ```bash
-nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install HIC_BWAMEM2
+nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install hic_bwamem2
 ```
 
 This will give you an error related to the `samtools/merge` module, which is not present in this repository.
