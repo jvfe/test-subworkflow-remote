@@ -1,14 +1,15 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/subworkflows/yaml-schema.json
-name: passing
+name: get_genome_annotation
 description: Placeholder
 keywords:
-  - bam
-  - cram
-  - genomics
+  - prokka
+  - bacterial
+  - annotation
 components:
-  - bwamem2/index
-  - samtools/merge
-  - cram/filteralign
+  - wget
+  - prokka:
+    org_path: nf-core
+    git_remote: https://github.com/nf-core/modules.git
 input:
   - reference_tuple:
       description: |
@@ -17,7 +18,7 @@ input:
       description: |
         Placeholder
 output:
-  - mappedbams:
+  - prokka_res:
       description: |
         Placeholder
   - versions:
