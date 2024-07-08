@@ -30,13 +30,10 @@ cd nf-core-test
 nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install passing
 ```
 
-4. Alternatively, attempt to download the `HIC_BWAMEM2` subworkflow, using this repository as your remote.
+4. Alternatively, attempt to download the `GET_GENOME_ANNOTATION` subworkflow, using this repository as your remote.
 
 ```bash
-nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install hic_bwamem2
+nf-core subworkflows --git-remote https://github.com/jvfe/test-subworkflow-remote install get_genome_annotation
 ```
 
-This will give you an error related to the `samtools/merge` module, which is not present in this repository.
-
-> [!NOTE]
-> The code inside the subworkflows is non-functional and serves merely to demonstrate the error.
+This will give you an error related to the `prokka` module, which is not present in this repository.
