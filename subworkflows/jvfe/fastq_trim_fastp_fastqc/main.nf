@@ -2,8 +2,8 @@
 // Read QC and trimming
 //
 
-include { FASTQC as FASTQC_RAW  } from '../../../modules/nf-core/fastqc/main'
-include { FASTQC as FASTQC_TRIM } from '../../../modules/nf-core/fastqc/main'
+include { FASTQC as FASTQC_RAW  } from '../../../modules/jvfe/fastqc/main'
+include { FASTQC as FASTQC_TRIM } from '../../../modules/jvfe/fastqc/main'
 include { FASTP                 } from '../../../modules/nf-core/fastp/main'
 
 //
